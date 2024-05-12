@@ -26,14 +26,16 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         // Query Builder
-        // User::create([
-        //     'name' => 'Admin',
-        //     'email' => 'admin@admin.com',
-        //     'email_verified_at' => now(),
-        //     'password' => Hash::make('password'),
-        //     'remember_token' => Str::random(10),
-        //     'is_admin' => true,
-        // ]);
+        User::create(
+            [
+                'name' => 'Siti Marfungah Dwi Lestari',
+                'email' => 'siti@siti.com',
+                'email_verified_at' => now(),
+                'password' => 'password',
+                'remember_token' => Str::random(10),
+                'is_admin' => true,
+            ]
+        );
 
         // User Factory
         User::factory()->create([
